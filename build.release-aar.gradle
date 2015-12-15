@@ -11,16 +11,22 @@ def localReleaseDest = "${buildDir}/release/${version}"
 task androidJavadocs(type: Javadoc) {
     source = android.sourceSets.main.java.srcDirs
     ext.androidJar = "${android.sdkDirectory}/platforms/${android.compileSdkVersion}/android.jar"
+
+    //noinspection GroovyAssignabilityCheck
     classpath += files(ext.androidJar)
 }
 
 task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
     classifier = 'javadoc'
+
+    //noinspection GroovyAssignabilityCheck
     from androidJavadocs.destinationDir
 }
 
 task androidSourcesJar(type: Jar) {
     classifier = 'sources'
+
+    //noinspection GroovyAssignabilityCheck
     from android.sourceSets.main.java.srcDirs
 }
 
