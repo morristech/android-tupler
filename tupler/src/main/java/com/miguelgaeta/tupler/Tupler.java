@@ -5,7 +5,7 @@ import rx.Observable;
 /**
  * Created by Miguel Gaeta on 10/20/15.
  */
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "DefaultFileTemplate"})
 public class Tupler {
 
     public static <A> Tuple1<A> create(A a) {

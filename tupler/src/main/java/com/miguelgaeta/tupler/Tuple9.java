@@ -8,7 +8,8 @@ import lombok.ToString;
 /**
  * Created by Miguel Gaeta on 5/20/15.
  */
-@SuppressWarnings("UnusedDeclaration") @AllArgsConstructor(access = AccessLevel.PACKAGE) @ToString @EqualsAndHashCode
+@SuppressWarnings({"UnusedDeclaration", "DefaultFileTemplate"})
+@AllArgsConstructor(access = AccessLevel.PACKAGE) @ToString @EqualsAndHashCode
 public class Tuple9<A, B, C, D, E, F, G, H, I> {
 
     public A d1;
