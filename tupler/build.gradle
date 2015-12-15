@@ -29,11 +29,11 @@ android {
 
 dependencies {
 
-    // Annotations
-    compile 'org.projectlombok:lombok:1.16.6'
+    //noinspection GradleDynamicVersion
+    provided 'org.projectlombok:lombok:1.+'
 
-    // Rx Java
-    compile 'io.reactivex:rxjava:1.0.16'
+    //noinspection GradleDynamicVersion
+    provided 'io.reactivex:rxjava:1.+'
 }
 
 apply from: '../build.release-aar.gradle'
