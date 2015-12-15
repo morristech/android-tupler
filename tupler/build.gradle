@@ -24,10 +24,10 @@ android {
 dependencies {
 
     //noinspection GradleDynamicVersion
-    provided 'org.projectlombok:lombok:1.+'
+    compile 'org.projectlombok:lombok:1.+'
 
     //noinspection GradleDynamicVersion
-    provided 'io.reactivex:rxjava:1.+'
+    compile 'io.reactivex:rxjava:1.+'
 }
 
 apply from: '../build.release-aar.gradle'
