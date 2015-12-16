@@ -10,7 +10,7 @@ All resulting zipped objects referred to as a `Tuple#` (semantically incorrect b
 
 ```groovy
 
-compile 'com.miguelgaeta.android-tupler:tupler:1.1.0'
+compile 'com.miguelgaeta.android-tupler:tupler:1.1.1'
 
 ```
 
