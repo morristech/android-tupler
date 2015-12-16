@@ -1,6 +1,8 @@
 ### android-tupler
 
-A simple utility library to create bundles of arbitrary objects - all resulting zipped objects referred to as a Tuple# (semantically incorrect but easier to use).
+A simple utility library to create bundles of arbitrary objects .
+
+All resulting zipped objects referred to as a `Tuple#` (semantically incorrect but easier to use).
 
 ### Installation
 
@@ -20,8 +22,8 @@ String a = "a";
 String b = "b";
 String c = "c";
 
-Tuple2<Boolean, Boolean> tuple = Tupler.create(a, b);
-Tuple3<String, String, String> = Tupler.create(a, b, c);
+Tuple2<String, String> tuple2 = Tupler.create(a, b);
+Tuple3<String, String, String> tuple3 = Tupler.create(a, b, c);
 
 ```
 
