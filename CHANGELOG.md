@@ -1,3 +1,7 @@
+## 1.1.2 - 2015-12-18
+
+- Fix null being returned on combine latest for Tuple3 through 9.
+
 ## 1.1.1 - 2015-12-16
 
 - Removed unused manifest properties to prevent merger errors.
