@@ -84,18 +84,19 @@ public class Tupler {
             @Override
             public Tuple3<A, B, C> call(A a, B b, C c) {
 
-                return null;
+                return new Tuple3<>(a, b, c);
             }
         });
     }
 
     public static <A, B, C, D> Observable<Tuple4<A, B, C, D>> combineLatest(Observable<A> a, Observable<B> b, Observable<C> c, Observable<D> d) {
+
         return Observable.combineLatest(a, b, c, d, new Func4<A, B, C, D, Tuple4<A, B, C, D>>() {
 
             @Override
             public Tuple4<A, B, C, D> call(A a, B b, C c, D d) {
 
-                return null;
+                return new Tuple4<>(a, b, c, d);
             }
         });
     }
@@ -107,7 +108,7 @@ public class Tupler {
             @Override
             public Tuple5<A, B, C, D, E> call(A a, B b, C c, D d, E e) {
 
-                return null;
+                return new Tuple5<>(a, b, c, d, e);
             }
         });
     }
@@ -119,7 +120,7 @@ public class Tupler {
             @Override
             public Tuple6<A, B, C, D, E, F> call(A a, B b, C c, D d, E e, F f) {
 
-                return null;
+                return new Tuple6<>(a, b, c, d, e, f);
             }
         });
     }
@@ -131,7 +132,7 @@ public class Tupler {
             @Override
             public Tuple7<A, B, C, D, E, F, G> call(A a, B b, C c, D d, E e, F f, G g) {
 
-                return null;
+                return new Tuple7<>(a, b, c, d, e, f, g);
             }
         });
     }
@@ -143,7 +144,7 @@ public class Tupler {
             @Override
             public Tuple8<A, B, C, D, E, F, G, H> call(A a, B b, C c, D d, E e, F f, G g, H h) {
 
-                return null;
+                return new Tuple8<>(a, b, c, d, e, f, g, h);
             }
         });
     }
@@ -155,7 +156,7 @@ public class Tupler {
             @Override
             public Tuple9<A, B, C, D, E, F, G, H, I> call(A a, B b, C c, D d, E e, F f, G g, H h, I i) {
 
-                return null;
+                return new Tuple9<>(a, b, c, d, e, f, g, h, i);
             }
         });
     }
